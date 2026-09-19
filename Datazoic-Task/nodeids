@@ -1,0 +1,12 @@
+[
+  "tests/test_agent_workflows.py::test_invoice_workflow",
+  "tests/test_agent_workflows.py::test_order_requires_confirmation",
+  "tests/test_agent_workflows.py::test_trace_exposes_architecture_stages",
+  "tests/test_executor.py::test_mock_create_order",
+  "tests/test_planner.py::test_invoice_plan_is_multistep",
+  "tests/test_planner.py::test_missing_order_id_clarifies",
+  "tests/test_policy.py::test_financial_requires_confirmation",
+  "tests/test_retrieval.py::test_nested_invoice_domain_search",
+  "tests/test_retrieval.py::test_registry_has_116_tools",
+  "tests/test_state.py::test_state_persists"
+]

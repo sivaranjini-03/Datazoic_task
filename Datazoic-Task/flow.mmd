@@ -1,0 +1,21 @@
+flowchart TD
+ U[User] --> G[FastAPI Gateway]
+ G --> A[LangGraph Agent / Orchestrator]
+ A --> R[Intent + Domain Router]
+ R --> P[PayPal Tool Pipeline]
+ R --> Q[RAG Tool]
+ R --> S[System Search Tool]
+ P --> T[Tool Registry]
+ T --> H[Hybrid Retrieval]
+ H --> K[Top 5-10 Candidates]
+ K --> L[LLM Planner]
+ L --> V[Validation]
+ V --> C[Policy / Confirmation]
+ C --> E[Generic PayPal Executor]
+ E --> O[OAuth 2.0]
+ O --> X[PayPal APIs]
+ E --> ST[Persistent State]
+ Q --> KB[Knowledge Base]
+ S --> T
+ ST --> G
+ X --> ST
